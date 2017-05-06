@@ -47,9 +47,7 @@ class ArrayIns {
 	// Added for 3.3 Solution
 	public void noDups() { // works only for sorted arrays
 		long current = a[0];
-		for (int count = 1; count < nElems; count++) { // set every duplicate
-														// number after original
-														// to -1
+		for (int count = 1; count < nElems; count++) { // set every duplicate number after original to -1
 			if (a[count] == current) {
 				a[count] = -1;
 			} else {
@@ -58,10 +56,7 @@ class ArrayIns {
 		}
 
 		int toInsert = 0;
-		for (int count = 0; count < nElems; count++) { // pushes all -1 values
-														// to end of array,
-														// every value only gets
-														// moved once
+		for (int count = 0; count < nElems; count++) { // pushes all -1 values to end of array, every value only gets moved once
 			if (a[count] == -1) {
 				toInsert = count;
 				for (int next = count + 1; next < nElems; next++) {
@@ -75,9 +70,7 @@ class ArrayIns {
 			}
 		}
 
-		for (int count = nElems - 1; count > 0; count--) { // gets rid of -1
-															// values at end of
-															// array
+		for (int count = nElems - 1; count > 0; count--) { // gets rid of -1 values at end of array
 			if (a[count] == -1)
 				nElems--;
 		}
