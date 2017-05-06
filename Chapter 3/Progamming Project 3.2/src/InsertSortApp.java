@@ -86,7 +86,6 @@ class InsertSortApp {
 		arr.display(); // display them again
 		
 		System.out.println("The Median is " + arr.median()); // output median
-																// for Solution
 
 	} // end main()
 } // end class InsertSortApp
