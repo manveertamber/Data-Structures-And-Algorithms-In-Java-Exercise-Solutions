@@ -1,4 +1,4 @@
-//Added for challenge 4.2
+//Written for challenge 4.2 by Manveer Tamber
 class Deque {
 	int maxSize;
 	int arr[];

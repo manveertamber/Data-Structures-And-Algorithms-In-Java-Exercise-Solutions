@@ -1,3 +1,4 @@
+// Modified for Challenge 4.1 by Manveer Tamber
 class Queue
    {
    private int maxSize;
@@ -55,14 +56,13 @@ class Queue
    //Added For Challenge 4.1
    public void display(){
 	   int pos = front;
-	   while(pos!=rear){
+	   for(int count = 0;count<nItems;count++){
 		   System.out.print(queArray[pos] + " ");
 		   pos++;
 		   if(pos==maxSize){
 			   pos = 0;			  
 		   }
 	   }
-	   System.out.print(queArray[pos]);
 	   System.out.println();
    }
    }  // end class Queue
